@@ -1,0 +1,140 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00fff2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ff0000;
+    text-align: center;
+}
+
+
+header {
+    background-color: #18191c;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+header:hover {
+    background-color: #ff0000;
+    transform: translateY(-3px);
+}
+
+
+header h1 {
+    font-size: 10rem;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+    text-shadow: 0 0 10px #ff0000; 
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #292c31;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+    padding: 0.5rem 1.5rem; /
+    margin: 0.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; 
+    background-color: #00d2ff;
+    color: #ff0000;
+    transition: background-color 0.2s, transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem; 
+}
+
+button:hover {
+    background-color: #00aaff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 0, 0, 0.3), transparent);
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+button:hover::before {
+    transform: scale(1);
+}
+
+
+button:hover {
+    background-color: #000000;
+}
+
+
+form {
+    margin-top: 1rem;
+    display: none;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+}
+
+
+#game-over {
+    text-align: center;
+    margin-top: 1rem;
+    color: #ff3d00;
+    font-size: 1.2rem;
+}
+
+
+#question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #3d3f42;
+    border-color: #27292c;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+#options button:hover {
+    background-color: #313335;
+}
+
+
+
+
+
+
